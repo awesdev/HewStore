@@ -9,10 +9,12 @@
 
 @media (max-width: 1200px)
     .header
-        &__lang, &__middle, &__end
+        &__lang
+            opacity: 0
+        &__middle, &__end
             display: none
         &__burger
-            display: flex
+            display: block
 
     .hero
         &__container
@@ -48,6 +50,12 @@
             width: 100%
 
 @media (max-width: 480px)
+    .lang
+        &__btn
+            font-size: 12px
+            &_active
+                font-size: 14px
+
     .hero
         &__logo
             width: 165px
@@ -108,6 +116,14 @@
             margin-bottom: 20px
 
 @media (max-width: 380px)
+    .header
+        &__burger
+            &-wrapper
+                flex-direction: column
+            &-btn
+                margin-right: 0
+                margin-bottom: 15px
+
     .contacts
         &__block
             &-header

@@ -63,17 +63,57 @@
             color: #FFE001
             font-size: 14px
             line-height: calc(17 / 14 * 100%)
+    &__lang
+        transition: opacity .3s ease
+        &_active
+            opacity: 1 !important
     &__burger
         width: 25px
-        height: 20px
         display: none
-        flex-direction: column
-        align-items: center
-        justify-content: space-between
+        &-container
+            display: none
         &-line
             height: 3px
-            width: 100%
             background: #FFE001
+            border-radius: 3px
+            margin-bottom: 5px
+            transition: transform .3s ease
+            &:last-child
+                margin-bottom: 0
         &_active
-            &:nth-last-of-type(2)
-                display: none
+            .header__burger-line
+                &:first-child
+                    margin: 0
+                    transform: rotate(45deg)
+                &:nth-of-type(2)
+                    display: none
+                &:last-child
+                    position: relative
+                    top: -3px
+                    margin: 0
+                    transform: rotate(-45deg)
+        &-nav
+            margin-top: 40px
+        &-item
+            margin-bottom: 35px
+            &:last-child
+                margin-bottom: 0
+        &-link
+            color: #FFFFFF
+            font-weight: 500
+            font-size: 16px
+            line-height: calc(19 / 16 * 100%)
+            transition: opacity .3s ease
+            &:hover
+                color: #FFFFFF
+                opacity: .7
+            &_active
+                color: #FFE001
+        &-wrapper
+            margin-top: 35px
+            display: flex
+            align-items: center
+        &-cart
+            margin: 0
+        &-btn
+            margin-right: 30px
