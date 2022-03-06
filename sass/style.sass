@@ -1,0 +1,41 @@
+h1, h2, h3, h4, h5, h6, p, ul
+    margin: 0
+    padding: 0
+
+ul
+    list-style-type: none
+
+a
+    text-decoration: none
+
+body
+    font-family: 'Inter', sans-serif
+    font-size: 16px
+    line-height: calc(24 / 16 * 100%)
+    background: #0A122E
+
+.wrapper
+    // overflow-x: hidden
+    background: url('../img/main/wrapper/bg.jpg') center bottom no-repeat
+
+.container
+    width: 100%
+    max-width: 1385px
+    padding: 0 20px
+    margin: 0 auto
+
+.main
+    background: url('../img/main/bg.jpg') center top no-repeat
+
+@import blocks/header
+@import blocks/lang
+@import blocks/btns
+@import blocks/hero
+@import blocks/link
+@import blocks/announcement
+@import blocks/title
+@import blocks/products
+@import blocks/subtitle
+@import blocks/contacts
+
+@import media

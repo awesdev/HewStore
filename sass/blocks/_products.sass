@@ -1,0 +1,89 @@
+.products
+    padding: 37px 0 3px 0
+    &__subtitle
+        margin-top: 10px
+        width: 770px
+    &__wrapper
+        margin-top: 50px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+    &__block
+        width: 425px
+        height: 247px
+        margin-bottom: 34px
+        display: flex
+        flex-direction: column
+        align-items: start
+        justify-content: space-between
+        &:nth-of-type(1)
+            background: url('../img/products/blocks/1.png') center center no-repeat
+        &:nth-of-type(2)
+            background: url('../img/products/blocks/2.png') center center no-repeat
+        &:nth-of-type(3)
+            background: url('../img/products/blocks/3.png') center center no-repeat
+        &:nth-of-type(4)
+            background: url('../img/products/blocks/4.png') center center no-repeat
+        &:nth-of-type(5)
+            background: url('../img/products/blocks/5.png') center center no-repeat
+        &:nth-of-type(6)
+            background: url('../img/products/blocks/5.png') center center no-repeat
+        &-top
+            display: flex
+            align-items: center
+            padding: 10px
+        &-bottom
+            display: flex
+            align-items: center
+            padding: 10px
+            width: 100%
+            background: rgba(22, 30, 57, 0.5)
+            backdrop-filter: blur(108px)
+            border-radius: 4px
+        &-info
+            display: inline-block
+            margin-right: 10px
+            padding: 4px 12px
+            backdrop-filter: blur(12px)
+            border-radius: 2px
+            font-weight: 600
+            font-size: 12px
+            line-height: calc(15 / 12 * 100%)
+            &:last-child
+                margin-right: 0
+            &_color
+                &_red
+                    color: #FF4654
+                    background: rgba(255, 70, 84, 0.2)
+                &_green
+                    color: #3CCC4F
+                    background: rgba(60, 204, 79, 0.15)
+                &_blue
+                    color: #3C5BFF
+                    background: rgba(60, 91, 255, 0.2)
+                &_orange
+                    color: #FA9C1D
+                    background: rgba(250, 156, 29, 0.2)
+        &-btn
+            margin-right: 25px
+            display: inline-flex
+            padding: 8px 16px
+            background: #FFE001
+            border-radius: 4px
+            align-items: center
+            justify-content: center
+            transition: opacity .3s ease
+            &:hover
+                opacity: .7
+            &-img
+                margin-right: 8px
+            &-text
+                color: #212121
+                font-weight: 600
+                font-size: 11px
+                line-height: calc(13 / 11 * 100%)
+    &__link
+        &-text
+            font-size: 11px
+            line-height: calc(13 / 11 * 100%)

@@ -1,0 +1,79 @@
+.header
+    padding: 14px 0
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background: rgba(22, 30, 57, 0.5)
+    backdrop-filter: blur(108px)
+    z-index: 66
+    &__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__start
+        display: flex
+        align-items: center
+    &__logo
+        margin-right: 31px
+        transition: opacity .3s ease
+        &:hover
+            opacity: .7
+    &__list
+        display: flex
+        align-items: center
+    &__item
+        margin-right: 50px
+        &:last-child
+            margin-right: 0
+    &__link
+        color: #FFFFFF
+        transition: opacity .3s ease, color .3s ease
+        &:hover
+            color: #FFFFFF
+            opacity: .7
+        &_active
+            position: relative
+            color: #FFE001
+            &:hover
+                color: #FFE001
+            &::after
+                position: absolute
+                content: ''
+                top: 100%
+                left: 50%
+                width: 80px
+                height: 30px
+                background: url('../img/header/link_active.svg') center center no-repeat
+                transform: translate(-50%, -4px)
+    &__end
+        display: flex
+        align-items: center
+    &__cart
+        margin-right: 30px
+        display: flex
+        align-items: center
+        transition: opacity .3s ease
+        &:hover
+            opacity: .7
+        &-img
+            margin-right: 8px
+        &-text
+            font-weight: 600
+            color: #FFE001
+            font-size: 14px
+            line-height: calc(17 / 14 * 100%)
+    &__burger
+        width: 25px
+        height: 20px
+        display: none
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        &-line
+            height: 3px
+            width: 100%
+            background: #FFE001
+        &_active
+            &:nth-last-of-type(2)
+                display: none
