@@ -49,6 +49,36 @@
         &__subtitle
             width: 100%
 
+    .announcements
+        &__block
+            width: 100%
+            &-img, &-header, &-subheader
+                width: 100%
+
+@media (max-width: 600px)
+    .modal
+        &__body
+            width: 470px
+        &__header
+            font-size: 20px
+        &__subheader
+            margin-top: 20px
+            width: 100%
+            font-size: 16px
+        &__btn
+            margin-top: 20px
+            font-size: 16px
+
+    .terms
+        &__text
+            font-size: 14px
+
+    .news
+        &-link
+            right: -28px
+            padding: 15px 20px
+            font-size: 24px
+
 @media (max-width: 480px)
     .lang
         &__btn
@@ -114,6 +144,20 @@
     .contacts
         &__block
             margin-bottom: 20px
+
+    .modal
+        &__body
+            padding: 20px 26px
+            width: 360px
+        &__header
+            font-size: 18px
+
+    .announcements
+        &__block
+            &-header
+                font-size: 18px
+            &-subheader
+                font-size: 16px
 
 @media (max-width: 380px)
     .header
